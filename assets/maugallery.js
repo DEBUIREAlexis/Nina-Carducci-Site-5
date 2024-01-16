@@ -141,12 +141,14 @@
 
       $(imagesCollection).each(function (i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i;
+          index = i - 1;
         }
       });
+      console.log(next);
       next =
         imagesCollection[index] ||
         imagesCollection[imagesCollection.length - 1];
+      console.log(next.attr("src"));
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     nextImage() {
@@ -176,7 +178,7 @@
 
       $(imagesCollection).each(function (i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i;
+          index = i + 1;
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
@@ -209,7 +211,7 @@
       var tagItems =
         '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
       $.each(tags, function (index, value) {
-        tagItems += `<li class="nav-item active">
+        tagItems += `<li class="nav-item">
                 <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
       });
       var tagsRow = `<ul class="my-4 tags-bar nav nav-pills">${tagItems}</ul>`;
