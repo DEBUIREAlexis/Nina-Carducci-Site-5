@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <!-- Google tag (gtag.js) -->
     <script
@@ -25,7 +25,7 @@
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
-    
+
     <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -35,11 +35,14 @@
     <script src="./assets/maugallery.js" defer></script>
     <script src="./assets/scripts.js" defer></script>
     <title>Photographe professionnelle - Nina Carducci</title>
-    <meta name="description" content="Rendez éternels vos souvenirs grâce à une experte en photo">
+    <meta
+      name="description"
+      content="Rendez éternels vos souvenirs grâce à une experte en photo"
+    />
   </head>
   <body>
     <div class="top-header">
-      <h1 class="name">Nina Carducci</h1>
+      <h1 class="name">Nina Carducci - Photographie</h1>
       <div class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -88,6 +91,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
+              fetchpriority="high"
               srcset="
                 ./assets/images/slider/art-S.avif  800w,
                 ./assets/images/slider/art-M.avif 1280w,
@@ -97,6 +101,7 @@
               sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)"
               src="./assets/images/slider/art.avif"
               alt="An artistic picture of a man crossing a street"
+              title="Daily life"
               class="d-block w-100"
             />
           </div>
@@ -111,6 +116,7 @@
               sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)"
               src="./assets/images/slider/public.avif"
               alt="A group of people at an event"
+              title="Cheering Crowd"
               class="d-block w-100"
             />
           </div>
@@ -125,6 +131,7 @@
               sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)"
               src="./assets/images/slider/family.avif"
               alt="A couple kissing at a wedding"
+              title="Family event"
               class="d-block w-100"
             />
           </div>
@@ -158,11 +165,11 @@
       </div>
       <div id="about-me">
         <h2 class="about-me__title">A propos de moi</h2>
-        <h6 class="about-me__introduction">
+        <blockquote class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-        </h6>
+        </blockquote>
         <p>
           Nous passons notre vie à chercher le bonheur, et lorsque nous y
           touchons, nous n’avons qu’une envie : le figer au travers de
@@ -188,6 +195,7 @@
             sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
             src="./assets/images/gallery/concerts/concert.avif"
             alt="Photo of a concert"
+            title="In the crowd"
           />
           <img
             data-gallery-tag="Entreprises"
@@ -198,6 +206,7 @@
             sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
             src="./assets/images/gallery/entreprise/businessman.avif"
             alt="A man in a fancy suit"
+            title="Businessman"
           />
           <img
             data-gallery-tag="Entreprises"
@@ -206,6 +215,7 @@
             sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
             src="./assets/images/gallery/entreprise/team.avif"
             alt="A laughing group"
+            title="Reunion"
           />
           <img
             data-gallery-tag="Mariages"
@@ -214,6 +224,7 @@
             sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
             src="./assets/images/gallery/mariage/union.avif"
             alt="Photo of hands holding each other"
+            title="Holding their hand"
           />
           <img
             data-gallery-tag="Portrait"
@@ -224,6 +235,7 @@
             sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
             src="./assets/images/gallery/portraits/portrait-man.avif"
             alt="Portrait of a man"
+            title="Man under the sun"
           />
           <img
             data-gallery-tag="Mariages"
@@ -232,6 +244,7 @@
             sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
             src="./assets/images/gallery/mariage/wedding.avif"
             alt="A couple at their wedding"
+            title="Wedding on the beach"
           />
           <img
             data-gallery-tag="Portrait"
@@ -242,6 +255,7 @@
             sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
             src="./assets/images/gallery/portraits/portrait-woman.avif"
             alt="Photo of a woman"
+            title="Portrait of a woman"
           />
           <img
             data-gallery-tag="Concert"
@@ -250,6 +264,7 @@
             sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
             src="./assets/images/gallery/concerts/singer.avif"
             alt="A singer at a concert"
+            title="Artist on stage"
           />
           <img
             data-gallery-tag="Entreprises"
@@ -260,25 +275,24 @@
             sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
             src="./assets/images/gallery/entreprise/lawyer.avif"
             alt="A woman with a justice statue"
+            title="Lawyer at work"
           />
         </div>
       </div>
       <div class="quote">
         <figure>
-          <blockquote>
-            <h1 class="quote__text">
-              Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
-              qu’un fait est traduit en photo, il cesse d’être un fait pour
-              devenir une opinion. L’inexactitude n’existe pas en photographie.
-              Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-            </h1>
+          <blockquote class="quote__text">
+            Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
+            qu’un fait est traduit en photo, il cesse d’être un fait pour
+            devenir une opinion. L’inexactitude n’existe pas en photographie.
+            Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
     </div>
     <div id="services">
-      <h3 class="title">Mes services</h3>
+      <h2 class="title">Mes services</h2>
       <div class="container">
         <div class="service">
           <div class="service__description">
@@ -324,12 +338,10 @@
     </div>
     <div class="quote">
       <figure>
-        <blockquote>
-          <h1 class="quote__text">
-            De manière inconsciente, je crois, je guette un regard, une
-            expression, des traits ou une nostalgie capable de résumer ou plus
-            exactement de révéler une vie
-          </h1>
+        <blockquote class="quote__text">
+          De manière inconsciente, je crois, je guette un regard, une
+          expression, des traits ou une nostalgie capable de résumer ou plus
+          exactement de révéler une vie
         </blockquote>
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
@@ -342,11 +354,11 @@
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
           <form action="" method="post">
-            <label>Nom</label>
+            <label for="nom">Nom</label>
             <input type="text" name="nom" id="nom" />
-            <label>Email</label>
+            <label for="email">Email</label>
             <input type="email" name="email" id="email" />
-            <label>Message</label>
+            <label for="message">Message</label>
             <textarea
               name="message"
               id="message"
