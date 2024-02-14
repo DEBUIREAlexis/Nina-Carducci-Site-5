@@ -67,9 +67,9 @@
       content="Nina Carducci, photographe pour vos évenements à Bordeaux et en Île-de-France"
     />
   </head>
-  <body>
+  <body itemscope itemtype="http://schema.org/LocalBusiness">
     <div class="top-header">
-      <h1 class="name">Nina Carducci - Photographie</h1>
+      <h1 class="name" itemprop="name">Nina Carducci - Photographie</h1>
       <div class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -175,7 +175,7 @@
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button
@@ -184,7 +184,7 @@
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -194,6 +194,7 @@
         <img
           src="./assets/images/nina/nina.avif"
           alt="A professional photographer"
+          itemprop="image"
         />
       </div>
       <div id="about-me">
@@ -350,7 +351,9 @@
             <p>
               Pour capturer vos moments les plus précieux et garder un souvenir
               impérissable. Je me déplace en Île-de-France pour réaliser vos
-              photos
+              photos du
+              <span itemprop="openingHours">lundi au vendredi de 10h à 19h</span
+              >.
             </p>
           </div>
           <div class="service__price">
@@ -400,10 +403,21 @@
       <div class="container">
         <div class="form-container">
           <h3>Une question ? Une demande de devis ?</h3>
-          <p>
-            N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
-            ou téléphonez moi au <strong>05 56 67 78 89</strong> du lundi au
-            vendredi de 10h à 19h
+          <p
+            itemprop="address"
+            itemscope
+            itemtype="http://schema.org/PostalAddress"
+          >
+            N’hésitez pas à m’écrire à
+            <span itemprop="email">ninacarducci@mail.com</span> ! Je vous
+            répondrais en moins de 24 heures ou téléphonez moi au
+            <strong itemprop="telephone">05 56 67 78 89</strong>. Vous pouvez
+            aussi m'envoyer une lettre au
+            <span itemprop="streetAddress"> 68 avenue Alsace-Lorraine</span>,
+            <span itemprop="postalCode">33200</span>,
+            <span itemprop="addressRegion" itemprop="addressLocality"
+              >Bordeaux</span
+            >.
           </p>
           <form action="" method="post">
             <label for="nom">Nom</label>
@@ -425,23 +439,5 @@
         </div>
       </div>
     </div>
-    <footer>
-      <div class="footer" itemscope itemtype="http://schema.org/LocalBusiness">
-        <span itemprop="name">Nina Carducci</span>
-        <span itemprop="telephone">05 56 67 78 89</span>
-        <span itemprop="email">ninacarducci@mail.com</span>
-        <time itemprop="openingHours">Mo,Tu,We,Th,Fr 10:00-19:00</time>
-        <div
-          itemprop="address"
-          itemscope
-          itemtype="http://schema.org/PostalAddress"
-        >
-          <span itemprop="streetAddress"> 68 avenue Alsace-Lorraine</span>
-          <span itemprop="addressLocality">Bordeaux</span>,
-          <span itemprop="addressRegion"> Bordeaux</span>
-          <span itemprop="postalCode">33200</span>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
